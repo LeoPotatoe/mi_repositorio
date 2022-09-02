@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English for kids</title>
+    <link rel="stylesheet" href="cursos_flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header> 
+        <div>
+            <img class="logo__redondo" src="../imagenes/Logo.jpg" alt="logo" >
+        </div>
+        <div>
+            <h1 class="logo__frase">English for Kids</h1>
+        </div>
+        <div> 
+            <a class="social_media" href="https://www.facebook.com/englishforkidscecilia2016">
+                 <i class='bx bxl-facebook-circle bx-tada'></i>
+            </a>
+        </div>
+    </header>     
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Index.html">Inicio</a>
+                 </li>
+                <li>
+                    <a href="./nosotros.html">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="./cursos.html">Niveles</a>
+                 </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+    <div>
+        <h1>Contactanos</h1>
+        <p>Telefono: XXXXXXXXX</p>
+        <p>Direccion: Doblas 1750</p>
+        <p>Email: ceciingles@hotmail.com</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.9567147565792!2d-58.427616037126555!3d-34.63666676050042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbae697e2f0b%3A0x71fb681cc201d73e!2sDoblas%201750%2C%20C1424BMJ%20CABA!5e0!3m2!1ses-419!2sar!4v1659493504113!5m2!1ses-419!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div>
+       <form action="" method="get" enctype="multipart/form-data">
+            <fieldset>
+             <legend>Datos personales</legend>
+                <br>
+                <div>
+                    <input type="text" id="Nombre y Apellido" name="Nombre y Apellido" 
+                        placeholder="Nombre y Apellido">
+                </div>
+                <br>
+                <div>
+                    <input type="email" id="email" name="email" 
+                        placeholder="Email">
+                </div>
+                <br>
+                <div>
+                    <p><b>Nivel de Ingles</b></p>
+                    <select name="" id="Nivel de Ingles">
+                        <option value="" selected disabled></option>
+                        <option value="Ninguno">Ninguno</option>
+                        <option value="Basico">Basico</option>
+                        <option value="Intermedio">Intermedio</option>
+                        <option value="Avanzado">Avanzado</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Edad"><b>Edad</b></label>
+                <br>
+                    <input type="number" name="edad" id="edad" min="0" max="100">
+                </div>
+                <br>
+                <div>
+                    <input type="text" id="asunto" name="Asunto" 
+                        placeholder="Asunto">
+                <br>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>        
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </div>
+            </fieldset>
+       </form>
+    </div>
+</main>
+<footer>
+    <p>cecigu604@hotmail.com</p>
+    <p>Parque Chacabuco - CABA - Argentina</p>
+    <p>Telefono 15-3313-0252</p> 
+</footer>
+</body>
+
+</html>

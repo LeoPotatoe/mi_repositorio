@@ -1,0 +1,87 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', cursive;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    background-color: #ffffff;
+    height: 100px;
+}
+
+.logo__redondo{
+    border-radius: 50%;
+    border: solid 3px #29335c;
+    height: 90px;
+    margin: 20px;
+}
+
+.logo__frase{
+    font-weight: bold;
+    color: #29335c;
+    font-size: 60px;
+}
+
+.social_media{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    background-color: #29335c;
+    height: 50px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    color: #ffffff;
+    list-style: none;
+    font-size: 22px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 20px;
+}
+
+main{
+    height: 100vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29335c;
+    height: 50px;
+    border-top: double 4px #ffffff;
+}
+
+footer p{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
