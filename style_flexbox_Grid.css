@@ -7,8 +7,47 @@
     text-decoration: none;
 }
 
+.logo{
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30px;  
+}
 
-#grid_container{
+.logo img{
+    border-radius: 50%;
+    height: 65px;
+    border: solid 1px #000000;
+}
+
+.logofrase{
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #29335c;
+}
+
+.social_media{
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.social_media a i{
+    font-size: 25px;
+}
+
+
+
+/*#grid_container{
     display: grid;
     grid-template-areas: 
     "header"
@@ -78,13 +117,13 @@ nav{
     padding: 5px;
 }*/
 
-.menu li a{
+/*.menu li a{
     font-size: 15px;
     color: #ffffff;
     margin: 5px;
 }
 /*media query header + nav cel, tablet pequeña*/
-@media screen and (min-width: 500px) {
+/*@media screen and (min-width: 500px) {
     .tlogo__redondo img{
         border-radius: 50%;
         height: 60px;
@@ -144,7 +183,7 @@ nav{
 }
 
 /*media query header + nav notebook*/
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 1000px) {
     .tlogo__redondo img{
         border-radius: 50%;
         height: 65px;
@@ -278,7 +317,7 @@ hr{
     /*transition: all 0.4s;*/
 }
 
-.escuela__imagenes img:hover{
+/*.escuela__imagenes img:hover{
     transform: scale(1.1);
     box-shadow: 4px 4px 10px #000000;
     filter: grayscale(100%);
@@ -287,7 +326,7 @@ hr{
     transition: all 0.4s;*/
 }
 
-.escuela__imagenes-lugar{
+/*.escuela__imagenes-lugar{
     margin-top: 10px;
     border-top: solid 5px #f3a712;
     border-left: solid 2px #29335c;
@@ -321,7 +360,7 @@ hr{
 }
 
 /*media main cel, tablets pequeñas*/
-@media screen and (min-width: 500px) {
+/*@media screen and (min-width: 500px) {
     .frase{
         display: flex;
         flex-direction: column;
@@ -354,7 +393,7 @@ hr{
 }
 
 /*media main notebook*/
-@media screen and (min-width: 1000px) {
+/*@media screen and (min-width: 1000px) {
     #portada{
         display: flex; 
         background-image: url('./Imagenes/chicos5.jpg');  
@@ -443,7 +482,7 @@ footer{
 }
 
 /*media main*/
-@media screen and (min-width: 500px) {
+/*@media screen and (min-width: 500px) {
     .datos{
         font-size: 15px;
         color: #ffffff;
@@ -483,4 +522,4 @@ footer{
           display: none;
         }
 
-}
+}*/
