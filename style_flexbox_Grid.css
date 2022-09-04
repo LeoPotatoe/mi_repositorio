@@ -79,6 +79,16 @@ nav{
     text-decoration: none; 
 }
 
+.modalidadv, .modalidadp{
+    object-fit: contain;
+}
+
+.modalidadv img, .modalidadp img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 /*#grid_container{
     display: grid;
     grid-template-areas: 
