@@ -4,12 +4,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DynaPuff', cursive;
-    text-decoration: none;
+}
+
+header, .primera{
+    height: 75px;
 }
 
 .logo{
     display: flex;
-    height: 90px;
+    height: 75px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -45,7 +48,32 @@
     font-size: 25px;
 }
 
+nav{
+    background-color: #29335c;
+    height: 80px;
+}
 
+.linkstyle{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+}
+
+.linkstyle li .first{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.linkstyle li a{
+    font-size: 25px;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none; 
+}
 
 /*#grid_container{
     display: grid;
