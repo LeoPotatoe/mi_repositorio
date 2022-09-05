@@ -79,14 +79,59 @@ nav{
     text-decoration: none; 
 }
 
-.modalidadv, .modalidadp{
-    object-fit: contain;
+.carousel-item h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #ffffff;
+    text-transform: uppercase;
 }
+
+.carousel-item p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    color: #ffffff;
+}
+
+.carousel-item img{
+    border-top: solid 5px #db2b39;
+    /*border-left: solid 2px #29335c;
+    border-right: solid 2px #29335c;
+    border-bottom: solid 2px #29335c;*/
+} 
 
 .modalidadv img, .modalidadp img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-top: solid 5px #f3a712;
+    /*border-left: solid 2px #29335c;
+    border-right: solid 2px #29335c;
+    border-bottom: solid 2px #29335c;*/
+}
+
+.modalidadv p{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+    bottom: 150px;
+    margin-left: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.modalidadp p{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #000000;
+    bottom: -200px;
+    margin-left: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 /*#grid_container{
