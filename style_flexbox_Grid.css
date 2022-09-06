@@ -31,12 +31,14 @@ header, .primera{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .logofrase h1{
     font-size: 50px;
     color:#29335c;
     font-weight: bold;
+    
 }
 
 .social_media{
@@ -52,9 +54,29 @@ header, .primera{
     font-size: 25px;
 }
 
+@media screen and (max-width: 950px) {
+
+
+}
+    
+
 nav{
     background-color: #29335c;
     height: 80px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 .linkstyle{
@@ -80,7 +102,7 @@ nav{
 }
 
 .carousel-item h5{
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
     font-size: 40px;
     text-shadow: 2px 2px 4px #000000;
     color: #ffffff;
@@ -102,6 +124,14 @@ nav{
     border-bottom: solid 2px #29335c;*/
 } 
 
+.modalidadv{
+    position: relative;
+}
+
+.modalidadp{
+    position: relative;
+}
+
 .modalidadv img, .modalidadp img{
     height: 100%;
     width: 100%;
@@ -113,25 +143,83 @@ nav{
 }
 
 .modalidadv p{
+    display: block;
     position: absolute;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
     font-size: 40px;
     text-shadow: 2px 2px 4px #000000;
-    bottom: 150px;
+    bottom: 20px;
     margin-left: 10px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 .modalidadp p{
+    display: block;
     position: absolute;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
     font-size: 35px;
     text-shadow: 2px 2px 4px #000000;
-    bottom: -200px;
+    bottom: 20px;
     margin-left: 10px;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.escuela h2{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #29335c;
+    /*font-family: 'Times New Roman', Times, serif;*/
+}
+
+.titulo hr{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.escuela__imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escuela__imagenes img{
+    height: 200px;
+    width: 300px;
+    filter: sepia(70%);
+    transition: all 0.3s ease-in-out; 
+    margin-bottom: 20px;
+}
+
+.escuela__imagenes img:hover{
+transform: scale(1.1);
+box-shadow: 4px 4px 10px #000000;
+filter: sepia(0%);
+rotate: -5deg;
+/*border-radius: 50%;
+box-shadow: 0px 0px 5px 5px #000000;
+transition: all 0.4s;*/
+}
+
+.foot{
+    background-color: #29335c;
+    border-top: solid 1px #000000;
+}
+
+.foot .foot__1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.foot .foot__1 p{
+    color: #ffffff;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 12px;
 }
 
 /*#grid_container{
