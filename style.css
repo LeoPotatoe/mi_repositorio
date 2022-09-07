@@ -6,8 +6,9 @@
     font-family: 'DynaPuff', cursive;
 }
 
-header, .primera{
+.primera{
     height: 75px;
+    width: 100%;
 }
 
 .logo{
@@ -53,7 +54,7 @@ header, .primera{
     font-size: 25px;
 }
 
-@media screen and (max-width: 950px) {
+@media (max-width: 768px) {
     .logofrase h1{
         font-size: 35px;
         color:#29335c;
@@ -67,7 +68,7 @@ header, .primera{
     }
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 576px) {
     .logofrase h1{
         font-size: 25px;
         color:#29335c;
@@ -117,7 +118,21 @@ nav{
     text-decoration: none; 
 }
 
-@media (max-width: 950px) {
+.navv .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 768px) {
     .linkstyle li a{
         font-size: 20px;
         color: #ffffff;
@@ -128,10 +143,8 @@ nav{
 
 }
 
-@media (max-width: 700px) {
-  
+@media (max-width: 576px) {}
     
-}
 
 .carousel-item h5{
     /*font-family: 'Times New Roman', Times, serif;*/
@@ -155,7 +168,6 @@ nav{
     border-right: solid 2px #29335c;
     border-bottom: solid 2px #29335c;*/
 } 
-
 
 
 .modalidadv{
