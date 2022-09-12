@@ -1,8 +1,11 @@
+@import 'prop/col.scss';
+@import 'prop/fuentes.scss';
+
 *{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DynaPuff', cursive;
+    font-family: $primary-font;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -24,7 +27,7 @@
         img{
             border-radius: 50%;
             height: 65px;
-            border: solid 1px #000000;
+            border: solid 1px $border-color;
     }  
 }
 .logofrase{
@@ -36,7 +39,7 @@
     text-transform: uppercase;
         h1{
             font-size: 50px;
-            color:#29335c;
+            color: $primary-color;
             font-weight: bold;
         }
 }
@@ -60,7 +63,7 @@
     .logofrase{
         h1{
             font-size: 35px;
-            color:#29335c;
+            color: $primary-color;
             font-weight: bold;
         }
 }
@@ -69,7 +72,7 @@
         img{
             border-radius: 50%;
             height: 60px;
-            border: solid 1px #000000;
+            border: solid 1px $border-color;
         }
 }
 }
@@ -78,7 +81,7 @@
     .logofrase{
         h1{
             font-size: 18px;
-            color:#29335c;
+            color: $primary-color;
             font-weight: bold;
         }
     }
@@ -92,7 +95,7 @@
             img{
             border-radius: 50%;
             height: 45px;
-            border: solid 1px #000000;
+            border: solid 1px $border-color;
         }
     }
  
@@ -100,7 +103,7 @@
     
 /*NAVBAR*/
 nav{
-    background-color: #29335c;
+    background-color: $primary-color;
     height: 80px;
 }
 
@@ -113,17 +116,17 @@ nav{
         li{
             a{
                 font-size: 25px;
-                color: #ffffff;
+                color: $secundary-color;
                 padding: 15px;
                 text-decoration: none;
                 &:hover{
-                    text-shadow: 1px 1px 10px #ffffff;
+                    text-shadow: 1px 1px 10px $secundary-color;
                     transition: .5s;
                 } 
             }
             .first{
-                color: #29335c;
-                background-color: #ffffff;
+                color: $primary-color;
+                background-color: $secundary-color;
                 padding: 5px;
                 text-decoration: none;
             }
@@ -133,7 +136,7 @@ nav{
 .navv{
  .checkbtn{
     font-size: 25px;
-    color: #ffffff;
+    color: $secundary-color;
     float: left;
     line-height: 70px;
     margin-left: 30px;
@@ -152,7 +155,7 @@ nav{
         li{
             a{
                 font-size: 20px;
-                color: #ffffff;
+                color: $secundary-color;
                 padding: 15px;
                 text-decoration: none; 
             }
@@ -179,12 +182,12 @@ nav{
                     font-size: 15px;
                     &:hover{
                         background: none;
-                        color: #e63946;
+                        color: $first-color;
                     }
                 }
                 .first{
                     background: none;
-                    color: #e63946;
+                    color: $first-color;
                 }
             }
         }
@@ -195,7 +198,7 @@ nav{
         position: fixed;
         width: 50%;
         height: 100vh;
-        background: #29335c;
+        background: $primary-color;
         top: 0px;
         right: -100%;
         text-align: center;
@@ -212,19 +215,19 @@ nav{
      h5{
     /*font-family: 'Times New Roman', Times, serif;*/
     font-size: 40px;
-    text-shadow: 2px 2px 4px #000000;
-    color: #ffffff;
+    text-shadow: 2px 2px 4px $border-color;
+    color: $secundary-color;
     text-transform: uppercase;
 }
     p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $secundary-font;
     font-size: 20px;
     font-style: italic;
-    text-shadow: 2px 2px 4px #000000;
-    color: #ffffff;
+    text-shadow: 2px 2px 4px $border-color;
+    color: $secundary-color;
 }
     img{
-    border-top: solid 5px #db2b39;
+    border-top: solid 5px $bordertopone-color;
     /*border-left: solid 2px #29335c;
     border-right: solid 2px #29335c;
     border-bottom: solid 2px #29335c;*/
@@ -238,7 +241,7 @@ nav{
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-top: solid 5px #f3a712;
+        border-top: solid 5px $bordertoptwo-color;
         /*border-left: solid 2px #29335c;
         border-right: solid 2px #29335c;
         border-bottom: solid 2px #29335c;*/
@@ -250,10 +253,10 @@ nav{
         position: absolute;
         /*font-family: 'Times New Roman', Times, serif;*/
         font-size: 40px;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 2px 2px 4px $border-color;
         bottom: 20px;
         margin-left: 10px;
-        color: #ffffff;
+        color: $secundary-color;
         text-transform: uppercase;
     }
 }
@@ -262,10 +265,10 @@ nav{
         position: absolute;
         /*font-family: 'Times New Roman', Times, serif;*/
         font-size: 35px;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 2px 2px 4px $border-color;
         bottom: 20px;
         margin-left: 10px;
-        color: #ffffff;
+        color: $secundary-color;
         text-transform: uppercase;
     }
 }
@@ -300,7 +303,7 @@ nav{
     font-size: 30px;
     margin-top: 40px;
     margin-left: 30px;
-    color: #29335c;
+    color: $primary-color;
     /*font-family: 'Times New Roman', Times, serif;*/
     }
 }
@@ -323,7 +326,7 @@ nav{
         margin-bottom: 20px;
         &:hover{
             transform: scale(1.1);
-            box-shadow: 4px 4px 10px #000000;
+            box-shadow: 4px 4px 10px $border-color;
             filter: sepia(0%);
             rotate: -5deg;
             /*border-radius: 50%;
@@ -366,7 +369,7 @@ nav{
             img{
                 height: 100px;
                 width: 200px;
-                border-top: solid 4px #db2b39;
+                border-top: solid 4px $bordertopone-color;
                 margin-bottom: 20px;
                 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
                 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -376,8 +379,8 @@ nav{
 }    
 /*FOOTER*/
 .foot{
-    background-color: #29335c;
-    border-top: solid 1px #000000;
+    background-color: $primary-color;
+    border-top: solid 1px $border-color;
     margin-bottom: 20px;
     .foot__1{
         display: flex;
@@ -385,7 +388,7 @@ nav{
         justify-content: space-between;
         margin-top: 20px;
             p{
-                color: #ffffff;
+                color: $secundary-color;
                 margin-left: 80px;
                 margin-right: 80px;
                 font-size: 12px;
@@ -427,7 +430,7 @@ nav{
 
 .saludo__frase{
     h3{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $secundary-font;
     margin-top: 20px;
     margin-left: 30px;
     }
@@ -460,7 +463,7 @@ nav{
             margin-right: 400px;
             margin-top: 20px;
             font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: $secundary-font;
         }
 }
 /*Tablet*/
@@ -477,7 +480,7 @@ nav{
             margin-right: 20px;
             margin-top: 20px;
             font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: $secundary-font;
         }
     } 
 }
@@ -497,7 +500,7 @@ nav{
             margin-right: 20px;
             margin-top: 20px;
             font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: $secundary-font;
         }  
     }
 }

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DynaPuff', cursive; }
+  font-family: "DynaPuff", cursive; }
 
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO SECCION INICIO*/
@@ -163,7 +163,7 @@ nav {
   text-transform: uppercase; }
 
 .carousel-item p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman, Times, serif";
   font-size: 20px;
   font-style: italic;
   text-shadow: 2px 2px 4px #000000;
@@ -322,7 +322,7 @@ nav {
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO SECCION SOBRE MI*/
 .saludo__frase h3 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman, Times, serif";
   margin-top: 20px;
   margin-left: 30px; }
 
@@ -351,7 +351,7 @@ nav {
     margin-right: 400px;
     margin-top: 20px;
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif; }
+    font-family: "Times New Roman, Times, serif"; }
 
 /*Tablet*/
 @media (max-width: 850px) {
@@ -365,7 +365,7 @@ nav {
     margin-right: 20px;
     margin-top: 20px;
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif; } }
+    font-family: "Times New Roman, Times, serif"; } }
 
 /*Mobile*/
 @media (max-width: 576px) {
@@ -381,4 +381,4 @@ nav {
     margin-right: 20px;
     margin-top: 20px;
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif; } }
+    font-family: "Times New Roman, Times, serif"; } }
