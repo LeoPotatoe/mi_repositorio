@@ -279,9 +279,9 @@ nav {
       width: 200px;
       border-top: solid 4px #db2b39;
       margin-bottom: 20px;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); } }
+      -webkit-box-shadow: 8px 8px 4px 0px #000000;
+      -moz-box-shadow: 8px 8px 4px 0px #000000;
+      box-shadow: 8px 8px 4px 0px #000000; } }
 
 /*FOOTER*/
 .foot {
@@ -342,9 +342,9 @@ nav {
     border-style: outset;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-box-shadow: 6px 6px 19px 4px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 6px 6px 19px 4px rgba(0, 0, 0, 0.51);
-    box-shadow: 6px 6px 19px 4px rgba(0, 0, 0, 0.51); }
+    -webkit-box-shadow: 6px 6px 19px 4px #000000;
+    -moz-box-shadow: 6px 6px 19px 4px #000000;
+    box-shadow: 6px 6px 19px 4px #000000; }
   .imagenceci p {
     text-align: justify;
     margin-left: 50px;

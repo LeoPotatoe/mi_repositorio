@@ -1,5 +1,6 @@
 @import 'prop/col.scss';
 @import 'prop/fuentes.scss';
+@import 'prop/sombras.scss';
 
 *{ 
     margin: 0;
@@ -370,10 +371,8 @@ nav{
                 height: 100px;
                 width: 200px;
                 border-top: solid 4px $bordertopone-color;
-                margin-bottom: 20px;
-                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                margin-bottom: 20px; 
+                @include primary-box-shadow(8px, 8px, 4px, 0px, $border-color);
             }
     }
 }    
@@ -453,9 +452,7 @@ nav{
             border-style: outset;
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
-            -webkit-box-shadow: 6px 6px 19px 4px rgba(0,0,0,0.51);
-            -moz-box-shadow: 6px 6px 19px 4px rgba(0,0,0,0.51);
-            box-shadow: 6px 6px 19px 4px rgba(0,0,0,0.51);
+            @include primary-box-shadow(6px, 6px, 19px, 4px, $border-color);    
         }
         p{
             text-align: justify;

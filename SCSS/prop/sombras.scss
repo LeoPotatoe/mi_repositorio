@@ -1,0 +1,5 @@
+@mixin primary-box-shadow($parametro1, $parametro2,  $parametro3, $parametro4, $parametro5) {
+    -webkit-box-shadow: $parametro1 $parametro2 $parametro3 $parametro4 $parametro5;
+    -moz-box-shadow: $parametro1 $parametro2 $parametro3 $parametro4 $parametro5;
+    box-shadow: $parametro1 $parametro2 $parametro3 $parametro4 $parametro5;
+}
