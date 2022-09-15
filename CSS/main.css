@@ -227,6 +227,7 @@ nav {
   margin-top: 40px;
   margin-left: 30px;
   color: #29335c;
+  text-transform: uppercase;
   /*font-family: 'Times New Roman', Times, serif;*/ }
 
 .titulo hr {
@@ -240,17 +241,54 @@ nav {
   .escuela__imagenes img {
     height: 200px;
     width: 300px;
-    filter: sepia(70%);
+    filter: grayscale(15%);
     transition: all 0.3s ease-in-out;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-top: 4px solid #db2b39; }
     .escuela__imagenes img:hover {
       transform: scale(1.1);
       box-shadow: 4px 4px 10px #000000;
-      filter: sepia(0%);
-      rotate: -5deg;
+      filter: sepia(100%);
+      rotate: -3deg;
       /*border-radius: 50%;
             box-shadow: 0px 0px 5px 5px #000000;
             transition: all 0.4s;*/ }
+
+.certificacion h2 {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 30px;
+  color: #29335c;
+  text-transform: uppercase;
+  /*font-family: 'Times New Roman', Times, serif;*/ }
+
+.cert hr {
+  width: 70%;
+  margin-left: 30px; }
+
+.cert p {
+  margin-left: 30px;
+  color: #29335c; }
+
+.lvivaschicos {
+  /*pasarlo a mobile*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .lvivaschicos img {
+    height: 300px;
+    width: 500px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-top: 4px solid #f3a712;
+    transition: all 0.4s; }
+    .lvivaschicos img:hover {
+      transform: scale(1.1);
+      box-shadow: 4px 4px 10px #000000;
+      border-radius: 50%;
+      box-shadow: 0px 0px 5px 5px #000000;
+      transition: all 0.4s; }
 
 .escuela__imagenes-small {
   display: none; }
@@ -279,9 +317,9 @@ nav {
       width: 200px;
       border-top: solid 4px #db2b39;
       margin-bottom: 20px;
-      -webkit-box-shadow: 8px 8px 4px 0px #000000;
-      -moz-box-shadow: 8px 8px 4px 0px #000000;
-      box-shadow: 8px 8px 4px 0px #000000; } }
+      -webkit-box-shadow: 3px 3px 12px 0px #000000;
+      -moz-box-shadow: 3px 3px 12px 0px #000000;
+      box-shadow: 3px 3px 12px 0px #000000; } }
 
 /*FOOTER*/
 .foot {
