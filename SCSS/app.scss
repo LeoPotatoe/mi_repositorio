@@ -1,6 +1,10 @@
 @import 'prop/col.scss';
 @import 'prop/fuentes.scss';
 @import 'prop/sombras.scss';
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css')   ;
+$tamaño: 50px;
 
 *{ 
     margin: 0;
@@ -39,7 +43,7 @@
     align-items: center;
     text-transform: uppercase;
         h1{
-            font-size: 50px;
+            font-size: $tamaño;
             color: $primary-color;
             font-weight: bold;
         }
@@ -54,7 +58,7 @@
     margin-right: 30px;
         a{
             i{
-                font-size: 25px;
+                font-size: ($tamaño - 25);
             }
         }
 }
@@ -63,7 +67,7 @@
 @media (max-width: 850px) {
     .logofrase{
         h1{
-            font-size: 35px;
+            font-size: ($tamaño - 15);
             color: $primary-color;
             font-weight: bold;
         }
@@ -81,7 +85,7 @@
 @media (max-width: 576px) {
     .logofrase{
         h1{
-            font-size: 18px;
+            font-size: ($tamaño - 32);
             color: $primary-color;
             font-weight: bold;
         }
@@ -116,7 +120,7 @@ nav{
     list-style: none;
         li{
             a{
-                font-size: 25px;
+                font-size: ($tamaño - 30);
                 color: $secundary-color;
                 padding: 15px;
                 text-decoration: none;
@@ -136,7 +140,7 @@ nav{
 
 .navv{
  .checkbtn{
-    font-size: 25px;
+    font-size: ($tamaño - 25);
     color: $secundary-color;
     float: left;
     line-height: 70px;
@@ -155,7 +159,7 @@ nav{
     .linkstyle{
         li{
             a{
-                font-size: 20px;
+                font-size: ($tamaño - 30);
                 color: $secundary-color;
                 padding: 15px;
                 text-decoration: none; 
@@ -180,7 +184,7 @@ nav{
             margin: 50px 0;
             line-height: 30px;
                 a{
-                    font-size: 15px;
+                    font-size: ($tamaño - 35);
                     &:hover{
                         background: none;
                         color: $first-color;
@@ -215,7 +219,7 @@ nav{
 .carousel-item{
      h5{
     /*font-family: 'Times New Roman', Times, serif;*/
-    font-size: 40px;
+    font-size: ($tamaño - 10);
     text-shadow: 2px 2px 4px $border-color;
     color: $secundary-color;
     text-transform: uppercase;
@@ -277,7 +281,7 @@ nav{
 @media (max-width: 850px) {
     .modalidadv, .modalidadp{
         p{
-            font-size: 20px;
+            font-size: ($tamaño - 30);
         }
     }   
 }
@@ -321,8 +325,8 @@ nav{
     flex-direction: column;
     align-items: center;
     img{
-        height: 200px;
-        width: 300px;
+        height: 225px;
+        width: 350px;
         filter: grayscale(15%);
         transition: all 0.3s ease-in-out; 
         margin-bottom: 20px;
@@ -331,7 +335,7 @@ nav{
             transform: scale(1.1);
             box-shadow: 4px 4px 10px $border-color;
             filter: sepia(100%);
-            rotate: -3deg;
+            /*rotate: -3deg;*/
             /*border-radius: 50%;
             box-shadow: 0px 0px 5px 5px #000000;
             transition: all 0.4s;*/
@@ -358,7 +362,7 @@ nav{
         color: $primary-color;
     }
 }
-.lvivaschicos{ /*pasarlo a mobile*/
+.lvivaschicos{ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -367,7 +371,7 @@ nav{
         height: 300px;
         width: 500px;
         margin-left: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         border-top: 4px solid $bordertoptwo-color;
         transition: all 0.4s;
         &:hover{
@@ -385,13 +389,38 @@ nav{
 }
 /*Tablet*/
 @media (max-width: 850px){
-    .escuela h2{
-        font-size: 25px;
+    .escuela{
+        h2{
+            font-size: 25px;
+        }
     }
-    .escuela__imagenes img{
-            height: 80px;
-            width: 180px;    
+    .escuela__imagenes{
+         img{
+            height: 120px;
+            width: 200px;    
+        }
     }
+    .certificacion{
+        h2{
+            font-size: 25px;    
+        }
+    }
+    .cert{
+        p{
+            font-size: 13px; 
+                a{
+                    img{
+                        height: 30px;
+                    }
+                }
+        }
+    }
+        .lvivaschicos{ 
+            img{
+                height: 150px;
+                width: 250px;    
+            }
+        }
 }
 /*Mobile*/
 @media (max-width: 576px){
@@ -400,11 +429,26 @@ nav{
         font-size: 15px;    
     }
 }
+    .certificacion{
+        h2{
+            font-size: 15px;    
+        }
+    }
+    .cert{
+        p{
+            font-size: 10px; 
+        }
+    }
     .escuela__imagenes{
          img{
-        display: none;
+            display: none;
         }
 }
+    .lvivaschicos{
+        img{
+            display: none;   
+        }
+    }
     .escuela__imagenes-small{
         display: flex;
         flex-direction: column;
@@ -448,7 +492,7 @@ nav{
                 p{
                     display: flex;
                     flex-direction: column;
-                    margin-left: 30px;
+                    align-items: center;
                 }
         }
     }
@@ -462,7 +506,7 @@ nav{
             p{
                 display: flex;
                 flex-direction: column;
-                margin-left: 30px;
+                align-items: center;
             }
         }
     }

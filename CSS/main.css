@@ -1,3 +1,6 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css");
 * {
   margin: 0;
   padding: 0;
@@ -86,7 +89,7 @@ nav {
   justify-content: end;
   list-style: none; }
   .linkstyle li a {
-    font-size: 25px;
+    font-size: 20px;
     color: #ffffff;
     padding: 15px;
     text-decoration: none; }
@@ -239,8 +242,8 @@ nav {
   flex-direction: column;
   align-items: center; }
   .escuela__imagenes img {
-    height: 200px;
-    width: 300px;
+    height: 225px;
+    width: 350px;
     filter: grayscale(15%);
     transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
@@ -249,7 +252,7 @@ nav {
       transform: scale(1.1);
       box-shadow: 4px 4px 10px #000000;
       filter: sepia(100%);
-      rotate: -3deg;
+      /*rotate: -3deg;*/
       /*border-radius: 50%;
             box-shadow: 0px 0px 5px 5px #000000;
             transition: all 0.4s;*/ }
@@ -271,7 +274,6 @@ nav {
   color: #29335c; }
 
 .lvivaschicos {
-  /*pasarlo a mobile*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -280,7 +282,7 @@ nav {
     height: 300px;
     width: 500px;
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-top: 4px solid #f3a712;
     transition: all 0.4s; }
     .lvivaschicos img:hover {
@@ -298,14 +300,29 @@ nav {
   .escuela h2 {
     font-size: 25px; }
   .escuela__imagenes img {
-    height: 80px;
-    width: 180px; } }
+    height: 120px;
+    width: 200px; }
+  .certificacion h2 {
+    font-size: 25px; }
+  .cert p {
+    font-size: 13px; }
+    .cert p a img {
+      height: 30px; }
+  .lvivaschicos img {
+    height: 150px;
+    width: 250px; } }
 
 /*Mobile*/
 @media (max-width: 576px) {
   .escuela h2 {
     font-size: 15px; }
+  .certificacion h2 {
+    font-size: 15px; }
+  .cert p {
+    font-size: 10px; }
   .escuela__imagenes img {
+    display: none; }
+  .lvivaschicos img {
     display: none; }
   .escuela__imagenes-small {
     display: flex;
@@ -345,7 +362,7 @@ nav {
     .foot .foot__1 p {
       display: flex;
       flex-direction: column;
-      margin-left: 30px; } }
+      align-items: center; } }
 
 /*Mobile*/
 @media (max-width: 576px) {
@@ -355,7 +372,7 @@ nav {
     .foot .-foot__1 p {
       display: flex;
       flex-direction: column;
-      margin-left: 30px; } }
+      align-items: center; } }
 
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO SECCION SOBRE MI*/
