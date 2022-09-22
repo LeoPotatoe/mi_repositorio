@@ -126,7 +126,6 @@ nav {
 @media (max-width: 576px) {
   .carousel-control-prev, .carousel-control-next {
     visibility: hidden; }
-  /*como se hace en scss???*/
   .navv .checkbtn {
     display: block; }
   .navv .linkstyle li {
@@ -152,17 +151,14 @@ nav {
     text-align: center;
     transition: all .5s;
     z-index: 1; }
-  /*puede ir adentro del .linkstyle de arriba???*/
   #check:checked ~ .linkstyle {
-    right: 0; }
-  /*como se hace en scss???*/ }
+    right: 0; } }
 
 /*MAIN*/
 main {
   background-color: #eaf6ff; }
 
 .carousel-item h5 {
-  /*font-family: 'Times New Roman', Times, serif;*/
   font-size: 40px;
   text-shadow: 2px 2px 4px #000000;
   color: #ffffff;
@@ -176,10 +172,7 @@ main {
   color: #ffffff; }
 
 .carousel-item img {
-  border-top: solid 5px #db2b39;
-  /*border-left: solid 2px #29335c;
-    border-right: solid 2px #29335c;
-    border-bottom: solid 2px #29335c;*/ }
+  border-top: solid 5px #db2b39; }
 
 .modalidadv, .modalidadp {
   display: inline-block;
@@ -188,14 +181,10 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-top: solid 5px #f3a712;
-    /*border-left: solid 2px #29335c;
-        border-right: solid 2px #29335c;
-        border-bottom: solid 2px #29335c;*/ }
+    border-top: solid 5px #f3a712; }
 
 .modalidadv p {
   position: absolute;
-  /*font-family: 'Times New Roman', Times, serif;*/
   font-size: 40px;
   text-shadow: 2px 2px 4px #000000;
   bottom: 20px;
@@ -205,7 +194,6 @@ main {
 
 .modalidadp p {
   position: absolute;
-  /*font-family: 'Times New Roman', Times, serif;*/
   font-size: 35px;
   text-shadow: 2px 2px 4px #000000;
   bottom: 20px;
@@ -236,8 +224,7 @@ section {
   margin-top: 40px;
   margin-left: 30px;
   color: #29335c;
-  text-transform: uppercase;
-  /*font-family: 'Times New Roman', Times, serif;*/ }
+  text-transform: uppercase; }
 
 .titulo hr {
   width: 70%;
@@ -257,19 +244,14 @@ section {
     .escuela__imagenes img:hover {
       transform: scale(1.1);
       box-shadow: 4px 4px 10px #000000;
-      filter: sepia(100%);
-      /*rotate: -3deg;*/
-      /*border-radius: 50%;
-            box-shadow: 0px 0px 5px 5px #000000;
-            transition: all 0.4s;*/ }
+      filter: sepia(100%); }
 
 .certificacion h2 {
   font-size: 30px;
   margin-top: 40px;
   margin-left: 30px;
   color: #29335c;
-  text-transform: uppercase;
-  /*font-family: 'Times New Roman', Times, serif;*/ }
+  text-transform: uppercase; }
 
 .cert hr {
   width: 70%;
@@ -461,3 +443,30 @@ section {
     -webkit-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75); }
+
+.cont .conta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.cont2 .map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px; }

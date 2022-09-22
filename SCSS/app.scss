@@ -172,7 +172,7 @@ nav{
 @media (max-width: 576px) {
     .carousel-control-prev, .carousel-control-next{
         visibility: hidden;
-    } /*como se hace en scss???*/
+    } 
 
     .navv {
         .checkbtn{
@@ -209,11 +209,11 @@ nav{
         text-align: center;
         transition: all .5s;
         z-index: 1;
-    } /*puede ir adentro del .linkstyle de arriba???*/
+    } 
 
     #check:checked ~ .linkstyle{
         right:0;
-    } /*como se hace en scss???*/
+    } 
 }
 /*MAIN*/
 main{
@@ -221,25 +221,21 @@ main{
 }
 .carousel-item{
      h5{
-    /*font-family: 'Times New Roman', Times, serif;*/
     font-size: ($tamaño - 10);
     text-shadow: 2px 2px 4px $border-color;
     color: $secundary-color;
     text-transform: uppercase;
-}
+    }
     p{
     font-family: $secundary-font;
     font-size: 20px;
     font-style: italic;
     text-shadow: 2px 2px 4px $border-color;
     color: $secundary-color;
-}
+    }
     img{
     border-top: solid 5px $bordertopone-color;
-    /*border-left: solid 2px #29335c;
-    border-right: solid 2px #29335c;
-    border-bottom: solid 2px #29335c;*/
-} 
+    } 
 }
 
 .modalidadv, .modalidadp{
@@ -250,16 +246,12 @@ main{
         width: 100%;
         object-fit: cover;
         border-top: solid 5px $bordertoptwo-color;
-        /*border-left: solid 2px #29335c;
-        border-right: solid 2px #29335c;
-        border-bottom: solid 2px #29335c;*/
     }
 }
 
 .modalidadv {
     p{
         position: absolute;
-        /*font-family: 'Times New Roman', Times, serif;*/
         font-size: 40px;
         text-shadow: 2px 2px 4px $border-color;
         bottom: 20px;
@@ -271,7 +263,6 @@ main{
 .modalidadp {
         p{
         position: absolute;
-        /*font-family: 'Times New Roman', Times, serif;*/
         font-size: 35px;
         text-shadow: 2px 2px 4px $border-color;
         bottom: 20px;
@@ -316,7 +307,6 @@ section{
     margin-left: 30px;
     color: $primary-color;
     text-transform: uppercase;
-    /*font-family: 'Times New Roman', Times, serif;*/
     }
 }
 
@@ -341,10 +331,6 @@ section{
             transform: scale(1.1);
             box-shadow: 4px 4px 10px $border-color;
             filter: sepia(100%);
-            /*rotate: -3deg;*/
-            /*border-radius: 50%;
-            box-shadow: 0px 0px 5px 5px #000000;
-            transition: all 0.4s;*/
         }
     }
 }
@@ -355,7 +341,6 @@ section{
    margin-left: 30px;
    color: $primary-color;
    text-transform: uppercase;
-   /*font-family: 'Times New Roman', Times, serif;*/
    }
 }
 .cert{
@@ -613,4 +598,35 @@ section{
         -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
         box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
     }
+}
+.cont{ 
+    .conta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.cont2{
+    .map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
