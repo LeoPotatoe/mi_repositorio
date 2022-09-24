@@ -125,7 +125,7 @@ nav{
                 padding: 15px;
                 text-decoration: none;
                 &:hover{
-                    text-shadow: 1px 1px 10px $secundary-color;
+                    text-shadow: 1px 1px 15px $secundary-color;
                     transition: .5s;
                 } 
             }
@@ -235,10 +235,22 @@ main{
     }
     img{
     border-top: solid 5px $bordertopone-color;
+    border-bottom: 2px solid $border-color;
     } 
 }
 
-.modalidadv, .modalidadp{
+.modalidadp{
+    display: inline-block;
+    position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top: solid 5px $bordertoptwo-color;
+        border-bottom: 2px solid $border-color;
+    }
+}
+.modalidadv{
     display: inline-block;
     position: relative;
     img{
@@ -248,7 +260,6 @@ main{
         border-top: solid 5px $bordertoptwo-color;
     }
 }
-
 .modalidadv {
     p{
         position: absolute;
@@ -281,6 +292,9 @@ main{
 }
 /*Mobile*/
 @media (max-width: 576px){
+    main{
+        background-color: $secundary-color;
+    }
     .modalidadv, .modalidadp{
          p{
         font-size: 11px;
@@ -297,7 +311,10 @@ main{
     }
 }
 /*SECTION*/
-section{
+.fondo1{
+    background-color: $background;
+}
+.fondo2{
     background-color: $background;
 }
 .escuela{
@@ -319,6 +336,7 @@ section{
 .escuela__imagenes{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     img{
         height: 225px;
@@ -327,6 +345,8 @@ section{
         transition: all 0.3s ease-in-out; 
         margin-bottom: 20px;
         border-top: 4px solid $bordertopone-color;
+        border-bottom: 2px solid $border-color;
+        border-radius: 10%;
         &:hover{
             transform: scale(1.1);
             box-shadow: 4px 4px 10px $border-color;
@@ -344,6 +364,9 @@ section{
    }
 }
 .cert{
+    background-color: $background2;
+    border-top: 2px solid $border-color;
+    border-bottom: 1px solid $border-color;
     hr{
         width: 70%;
         margin-left: 30px;
@@ -398,6 +421,7 @@ section{
         }
     }
     .cert{
+        background-color: $background2;
         p{
             font-size: 13px; 
                 a{
@@ -416,6 +440,9 @@ section{
 }
 /*Mobile*/
 @media (max-width: 576px){
+    .fondo1{
+        background-color: $secundary-color;
+    }
     .escuela{
          h2{
         font-size: 20px;    
@@ -427,6 +454,9 @@ section{
         }
     }
     .cert{
+        background-color: $secundary-color;
+        border-top: none;
+        border-bottom: none;
         p{
             font-size: 10px; 
         }
@@ -599,6 +629,8 @@ section{
         box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
     }
 }
+/*------------------------------------------------------------------------------------------------------*/
+/*ESTILANDO CONTACTO*/
 .cont{ 
     .conta{
         display: flex;
@@ -629,4 +661,10 @@ form{
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.foto{
+    img{
+        height: 300px;
+        width: auto;        
+    }
 }

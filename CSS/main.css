@@ -94,7 +94,7 @@ nav {
     padding: 15px;
     text-decoration: none; }
     .linkstyle li a:hover {
-      text-shadow: 1px 1px 10px #ffffff;
+      text-shadow: 1px 1px 15px #ffffff;
       transition: .5s; }
   .linkstyle li .first {
     color: #29335c;
@@ -172,12 +172,23 @@ main {
   color: #ffffff; }
 
 .carousel-item img {
-  border-top: solid 5px #db2b39; }
+  border-top: solid 5px #db2b39;
+  border-bottom: 2px solid #000000; }
 
-.modalidadv, .modalidadp {
+.modalidadp {
   display: inline-block;
   position: relative; }
-  .modalidadv img, .modalidadp img {
+  .modalidadp img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top: solid 5px #f3a712;
+    border-bottom: 2px solid #000000; }
+
+.modalidadv {
+  display: inline-block;
+  position: relative; }
+  .modalidadv img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -208,6 +219,8 @@ main {
 
 /*Mobile*/
 @media (max-width: 576px) {
+  main {
+    background-color: #ffffff; }
   .modalidadv p, .modalidadp p {
     font-size: 11px; }
   .carousel-item h5 {
@@ -216,7 +229,10 @@ main {
     font-size: 10px; } }
 
 /*SECTION*/
-section {
+.fondo1 {
+  background-color: #eaf6ff; }
+
+.fondo2 {
   background-color: #eaf6ff; }
 
 .escuela h2 {
@@ -233,6 +249,7 @@ section {
 .escuela__imagenes {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
   .escuela__imagenes img {
     height: 225px;
@@ -240,7 +257,9 @@ section {
     filter: grayscale(15%);
     transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
-    border-top: 4px solid #db2b39; }
+    border-top: 4px solid #db2b39;
+    border-bottom: 2px solid #000000;
+    border-radius: 10%; }
     .escuela__imagenes img:hover {
       transform: scale(1.1);
       box-shadow: 4px 4px 10px #000000;
@@ -253,13 +272,16 @@ section {
   color: #29335c;
   text-transform: uppercase; }
 
-.cert hr {
-  width: 70%;
-  margin-left: 30px; }
-
-.cert p {
-  margin-left: 40px;
-  color: #29335c; }
+.cert {
+  background-color: #e9c46a;
+  border-top: 2px solid #000000;
+  border-bottom: 1px solid #000000; }
+  .cert hr {
+    width: 70%;
+    margin-left: 30px; }
+  .cert p {
+    margin-left: 40px;
+    color: #29335c; }
 
 .lvivaschicos {
   display: flex;
@@ -293,22 +315,30 @@ section {
     width: 200px; }
   .certificacion h2 {
     font-size: 25px; }
-  .cert p {
-    font-size: 13px; }
-    .cert p a img {
-      height: 30px; }
+  .cert {
+    background-color: #e9c46a; }
+    .cert p {
+      font-size: 13px; }
+      .cert p a img {
+        height: 30px; }
   .lvivaschicos img {
     height: 150px;
     width: 250px; } }
 
 /*Mobile*/
 @media (max-width: 576px) {
+  .fondo1 {
+    background-color: #ffffff; }
   .escuela h2 {
     font-size: 20px; }
   .certificacion h2 {
     font-size: 20px; }
-  .cert p {
-    font-size: 10px; }
+  .cert {
+    background-color: #ffffff;
+    border-top: none;
+    border-bottom: none; }
+    .cert p {
+      font-size: 10px; }
   .escuela__imagenes img {
     display: none; }
   .lvivaschicos img {
@@ -444,6 +474,8 @@ section {
     -moz-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75); }
 
+/*------------------------------------------------------------------------------------------------------*/
+/*ESTILANDO CONTACTO*/
 .cont .conta {
   display: flex;
   flex-direction: column;
@@ -470,3 +502,7 @@ form {
   height: 100%;
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.foto img {
+  height: 300px;
+  width: auto; }
