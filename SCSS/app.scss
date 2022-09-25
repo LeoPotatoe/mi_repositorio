@@ -216,9 +216,6 @@ nav{
     } 
 }
 /*MAIN*/
-main{
-    background-color: $background;
-}
 .carousel-item{
      h5{
     font-size: ($tamaño - 10);
@@ -311,12 +308,6 @@ main{
     }
 }
 /*SECTION*/
-.fondo1{
-    background-color: $background;
-}
-.fondo2{
-    background-color: $background;
-}
 .escuela{
      h2{
     font-size: 30px;
@@ -333,26 +324,160 @@ main{
         margin-left: 30px;
     }
 }
-.escuela__imagenes{
+.contenedor_tarjeta{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    img{
-        height: 225px;
-        width: 350px;
-        filter: grayscale(15%);
-        transition: all 0.3s ease-in-out; 
-        margin-bottom: 20px;
-        border-top: 4px solid $bordertopone-color;
-        border-bottom: 2px solid $border-color;
-        border-radius: 10%;
-        &:hover{
-            transform: scale(1.1);
-            box-shadow: 4px 4px 10px $border-color;
-            filter: sepia(100%);
+    max-width: 1100px;
+        .tarjeta1{
+            width: 100%;
+            margin: 20px;
+            margin-left: 30px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: $background;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            cursor: default;
+            transition: all 400ms ease;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                transform: translateY(-3%);
+            }
+            .lugar{
+                img{
+                    width: 100%;
+                    height: 210px;
+                    border-top: 4px solid $bordertopone-color;
+                    }
+                } 
+            .contenido{
+                padding: 15px;
+                text-align: center;
+                    p{
+                        line-height: 1.5;
+                        color: $cardfontcolor;
+                    }
+                    h3{
+                        color: $primary-color;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        text-transform: uppercase;
+                    }
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 10px;
+                        margin-top: 10px;
+                        color: $bordertopone-color;
+                        border: 1px solid $bordertopone-color;
+                        border-radius: 4px;
+                        transition: all 400ms ease;
+                        &:hover{
+                            background: $bordertopone-color;
+                            color: $secundary-color;
+                        }
+                    }
+            }    
         }
-    }
+        .tarjeta2{
+            width: 100%;
+            margin: 20px;
+            margin-left: 30px;
+            border-radius: 6px;
+            overflow: hidden;
+            background: $background;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            cursor: default;
+            transition: all 400ms ease;
+            &:hover{
+                box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                transform: translateY(-3%);
+            }
+            .horarios{
+                img{
+                    width: 100%;
+                    height: 210px;
+                    border-top: 4px solid $bordertoptwo-color;
+                    }
+                } 
+            .contenido{
+                padding: 15px;
+                text-align: center;
+                    p{
+                        line-height: 1.5;
+                        color: $cardfontcolor;
+                    }
+                    h3{
+                        color: $primary-color;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        text-transform: uppercase;
+                    }
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 10px;
+                        margin-top: 10px;
+                        color: $bordertopone-color;
+                        border: 1px solid $bordertopone-color;
+                        border-radius: 4px;
+                        transition: all 400ms ease;
+                        &:hover{
+                            background: $bordertopone-color;
+                            color: $secundary-color;
+                        }
+                    }
+                }   
+            }  
+            .tarjeta3{
+                width: 100%;
+                margin: 20px;
+                margin-left: 30px;
+                border-radius: 6px;
+                overflow: hidden;
+                background: $background;
+                box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+                cursor: default;
+                transition: all 400ms ease;
+                &:hover{
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+                    transform: translateY(-3%);
+                }
+                .inscripcion{
+                    img{
+                        width: 100%;
+                        height: 210px;
+                        border-top: 4px solid $bordertopthree-color;
+                        }
+                    } 
+                .contenido{
+                    padding: 15px;
+                    text-align: center;
+                        p{
+                            line-height: 1.5;
+                            color: $cardfontcolor;
+                        }
+                        h3{
+                            color: $primary-color;
+                            margin-top: 10px;
+                            margin-bottom: 15px;
+                            text-transform: uppercase;
+                        }
+                        a{
+                            text-decoration: none;
+                            display: inline-block;
+                            padding: 10px;
+                            margin-top: 10px;
+                            color: $bordertopone-color;
+                            border: 1px solid $bordertopone-color;
+                            border-radius: 4px;
+                            transition: all 400ms ease;
+                            &:hover{
+                                background: $bordertopone-color;
+                                color: $secundary-color;
+                            }
+                        }
+                    }   
+                }        
 }
 .certificacion{
     h2{
@@ -384,6 +509,7 @@ main{
     img{
         height: 300px;
         width: 500px;
+        border-radius: 6px;
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 40px;
@@ -501,6 +627,16 @@ main{
                 margin-right: 80px;
                 font-size: 12px;
             }
+            .freepik{
+                margin-left: 80px;
+                margin-right: 80px;
+                font-size: 12px;
+                a{
+                color: $first-color;
+                list-style: none;
+                text-decoration: none;
+                }
+            }
     }
 
 }
@@ -541,6 +677,8 @@ main{
     font-family: $secundary-font;
     margin-top: 20px;
     margin-left: 30px;
+    font-size: 40px;
+    color: $primary-color;
     }
 }
 .saludo{
@@ -553,8 +691,8 @@ main{
     display: flex;
     flex-direction: row;
         img{
-            height: 350px;
-            width: 300px;
+            height: 400px;
+            width: 350px;
             margin-left: 80px;
             margin-top: 20px;
             margin-bottom: 30px;
@@ -571,6 +709,34 @@ main{
             font-style: italic;
             font-family: $secundary-font;
         }
+}
+.escuela__imagenes{
+    display: flex;
+    justify-content: center;
+    img{
+        background: $cardfontcolor;
+        @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
+        width: 80%;
+        height: 80%;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border: 2px solid $border-color;
+        }
+    }
+.escuela__imagenes2{
+    display: flex;
+    justify-content: center;
+    img{
+        background: $cardfontcolor;
+        @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
+        width: 80%;
+        height: 80%;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        border: 2px solid $border-color;
+    }
 }
 /*Tablet*/
 @media (max-width: 850px){
@@ -619,11 +785,11 @@ main{
     justify-content: center;
     img{
         background-color: #a10702;
-        padding: 5% 0px;
+        padding: 3px 0px;
         margin-top: 5px;
         margin-bottom: 5px;
         height: 85%;
-        width: 60%;
+        width: auto;
         -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
         box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
@@ -653,7 +819,7 @@ main{
         margin-bottom: 20px;
     }
 }
-form{
+.formulario{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -668,3 +834,4 @@ form{
         width: auto;        
     }
 }
+
