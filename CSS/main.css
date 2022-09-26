@@ -362,44 +362,42 @@ nav {
           background: #db2b39;
           color: #ffffff; }
 
-.certificacion h2 {
-  font-size: 30px;
-  margin-top: 40px;
-  margin-left: 30px;
-  color: #29335c;
-  text-transform: uppercase; }
-
 .cert {
   background-color: #e9c46a;
   border-top: 2px solid #000000;
   border-bottom: 1px solid #000000; }
+  .cert .certificacion h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #29335c;
+    text-transform: uppercase; }
   .cert hr {
     width: 70%;
     margin-left: 30px; }
-  .cert p {
+  .cert .frase p {
     margin-left: 40px;
     color: #29335c; }
-
-.lvivaschicos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-  .lvivaschicos img {
-    height: 300px;
-    width: 500px;
-    border-radius: 6px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 40px;
-    border-top: 4px solid #f3a712;
-    transition: all 0.4s; }
-    .lvivaschicos img:hover {
-      transform: scale(1.1);
-      box-shadow: 4px 4px 10px #000000;
-      border-radius: 50%;
-      box-shadow: 0px 0px 5px 5px #000000;
+  .cert .lvivaschicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .cert .lvivaschicos img {
+      height: 250px;
+      width: 400px;
+      border-radius: 6px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 40px;
+      border-top: 4px solid #f3a712;
       transition: all 0.4s; }
+      .cert .lvivaschicos img:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 10px #000000;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 5px #000000;
+        transition: all 0.4s; }
 
 .escuela__imagenes-small {
   display: none; }
@@ -408,39 +406,32 @@ nav {
 @media (max-width: 850px) {
   .escuela h2 {
     font-size: 25px; }
-  .escuela__imagenes img {
-    height: 120px;
-    width: 200px; }
-  .certificacion h2 {
-    font-size: 25px; }
   .cert {
     background-color: #e9c46a; }
     .cert p {
       font-size: 13px; }
       .cert p a img {
         height: 30px; }
-  .lvivaschicos img {
-    height: 150px;
-    width: 250px; } }
+    .cert .certificacion h2 {
+      font-size: 25px; }
+    .cert .lvivaschicos img {
+      height: 150px;
+      width: 250px; } }
 
 /*Mobile*/
 @media (max-width: 576px) {
-  .fondo1 {
-    background-color: #ffffff; }
   .escuela h2 {
-    font-size: 20px; }
-  .certificacion h2 {
     font-size: 20px; }
   .cert {
     background-color: #ffffff;
     border-top: none;
     border-bottom: none; }
-    .cert p {
+    .cert .certificacion h2 {
+      font-size: 20px; }
+    .cert .frase p {
       font-size: 10px; }
-  .escuela__imagenes img {
-    display: none; }
-  .lvivaschicos img {
-    display: none; }
+    .cert .lvivaschicos {
+      display: none; }
   .escuela__imagenes-small {
     display: flex;
     flex-direction: column;
@@ -538,8 +529,19 @@ nav {
 .escuela__imagenes {
   display: flex;
   justify-content: center; }
-  .escuela__imagenes img {
-    background: #6a6a6a;
+  .escuela__imagenes .uno {
+    background: #fffcf9;
+    -webkit-box-shadow: 2px 2px 10px 2px #000000;
+    -moz-box-shadow: 2px 2px 10px 2px #000000;
+    box-shadow: 2px 2px 10px 2px #000000;
+    width: 80%;
+    height: 80%;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid #000000; }
+  .escuela__imagenes .dos {
+    background: #e9c46a;
     -webkit-box-shadow: 2px 2px 10px 2px #000000;
     -moz-box-shadow: 2px 2px 10px 2px #000000;
     box-shadow: 2px 2px 10px 2px #000000;
@@ -553,7 +555,7 @@ nav {
 .escuela__imagenes2 {
   display: flex;
   justify-content: center; }
-  .escuela__imagenes2 img {
+  .escuela__imagenes2 .uno {
     background: #6a6a6a;
     -webkit-box-shadow: 2px 2px 10px 2px #000000;
     -moz-box-shadow: 2px 2px 10px 2px #000000;
@@ -561,7 +563,18 @@ nav {
     width: 80%;
     height: 80%;
     padding: 20px 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid #000000; }
+  .escuela__imagenes2 .dos {
+    background: #7ebc89;
+    -webkit-box-shadow: 2px 2px 10px 2px #000000;
+    -moz-box-shadow: 2px 2px 10px 2px #000000;
+    box-shadow: 2px 2px 10px 2px #000000;
+    width: 80%;
+    height: 80%;
+    padding: 20px 30px;
+    margin-bottom: 20px;
     border-radius: 6px;
     border: 2px solid #000000; }
 
@@ -593,7 +606,9 @@ nav {
     margin-right: 20px;
     margin-top: 20px;
     font-style: italic;
-    font-family: "Times New Roman, Times, serif"; } }
+    font-family: "Times New Roman, Times, serif"; }
+  .saludo .saludo__frase h3 {
+    font-size: 25px; } }
 
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO NIVELES*/
@@ -612,35 +627,106 @@ nav {
     -moz-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75); }
 
+@media (max-width: 850px) {
+  .niveles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .niveles img {
+      background-color: #a10702;
+      padding: 3px 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      height: 85%;
+      width: 100%;
+      -webkit-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75); } }
+
+/*Mobile*/
+@media (max-width: 576px) {
+  .niveles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .niveles img {
+      background-color: #a10702;
+      padding: 3px 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      height: 85%;
+      width: 100%;
+      -webkit-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75); } }
+
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO CONTACTO*/
-.cont .conta {
+.fond {
+  background-image: url("../imagenes/close-up-people-putting-hands-together.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .fond .cont {
+    display: flex;
+    justify-content: flex-end; }
+    .fond .cont .conta h2 {
+      text-shadow: 1px 1px 2px #ffffff;
+      color: #29335c; }
+    .fond .cont .conta p {
+      text-shadow: 1px 1px 2px #ffffff;
+      color: #29335c; }
+  .fond .cont2 {
+    display: flex;
+    justify-content: flex-start; }
+    .fond .cont2 .map {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      height: 100%;
+      width: 100%; }
+
+#contenedor {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  background: #f7f7f9; }
+  #contenedor .formulario {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e63946;
+    padding: 10px;
+    background: #fffcf9;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); }
+    #contenedor .formulario .tit {
+      text-align: center; }
 
-.cont2 .map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+@media (max-width: 850px) {
+  .fond .cont2 {
+    display: flex;
+    justify-content: flex-start; }
+    .fond .cont2 .map {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      height: 100%;
+      width: 100%; } }
 
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.foto img {
-  height: 300px;
-  width: auto; }
+/*Mobile*/
+@media (max-width: 576px) {
+  /*.fond{
+        .cont2{
+            display: flex;
+            justify-content: flex-start;
+            .map{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            height: 100%;
+            width: 100%;
+            }
+        }
+    }*/ }

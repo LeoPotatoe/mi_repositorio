@@ -479,71 +479,61 @@ nav{
                     }   
                 }        
 }
-.certificacion{
-    h2{
-   font-size: 30px;
-   margin-top: 40px;
-   margin-left: 30px;
-   color: $primary-color;
-   text-transform: uppercase;
-   }
-}
 .cert{
     background-color: $background2;
     border-top: 2px solid $border-color;
     border-bottom: 1px solid $border-color;
+    .certificacion{
+        h2{
+            font-size: 30px;
+            margin-top: 40px;
+            margin-left: 30px;
+            color: $primary-color;
+            text-transform: uppercase;
+       }
+    }
     hr{
         width: 70%;
         margin-left: 30px;
     }
-    p{
-        margin-left: 40px;
-        color: $primary-color;
-    }
-}
-.lvivaschicos{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    img{
-        height: 300px;
-        width: 500px;
-        border-radius: 6px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 40px;
-        border-top: 4px solid $bordertoptwo-color;
-        transition: all 0.4s;
-        &:hover{
-            transform: scale(1.1);
-            box-shadow: 4px 4px 10px $border-color;
-            border-radius: 50%;
-            box-shadow: 0px 0px 5px 5px $border-color;
-            transition: all 0.4s;
+    .frase{
+        p{
+            margin-left: 40px;
+            color: $primary-color;
         }
-    }  
+    }
+    .lvivaschicos{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 250px;
+            width: 400px;
+            border-radius: 6px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+            border-top: 4px solid $bordertoptwo-color;
+            transition: all 0.4s;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 4px 4px 10px $border-color;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px 5px $border-color;
+                transition: all 0.4s;
+            }
+        }  
+    } 
 }
-
 .escuela__imagenes-small{
     display: none;
-}
+    }
 /*Tablet*/
 @media (max-width: 850px){
     .escuela{
         h2{
             font-size: 25px;
-        }
-    }
-    .escuela__imagenes{
-         img{
-            height: 120px;
-            width: 200px;    
-        }
-    }
-    .certificacion{
-        h2{
-            font-size: 25px;    
         }
     }
     .cert{
@@ -556,46 +546,44 @@ nav{
                     }
                 }
         }
-    }
+        .certificacion{
+            h2{
+                font-size: 25px;    
+            }
+        }
         .lvivaschicos{ 
             img{
                 height: 150px;
                 width: 250px;    
             }
         }
+    }
+   
 }
 /*Mobile*/
 @media (max-width: 576px){
-    .fondo1{
-        background-color: $secundary-color;
-    }
     .escuela{
          h2{
         font-size: 20px;    
-    }
-}
-    .certificacion{
-        h2{
-            font-size: 20px;    
-        }
-    }
+        }   
+    }    
     .cert{
         background-color: $secundary-color;
         border-top: none;
         border-bottom: none;
-        p{
+        .certificacion{
+            h2{
+                font-size: 20px;    
+            }
+        }
+        .frase{
+            p{
             font-size: 10px; 
+            }
         }
-    }
-    .escuela__imagenes{
-         img{
-            display: none;
-        }
-}
-    .lvivaschicos{
-        img{
-            display: none;   
-        }
+        .lvivaschicos{
+                display: none;   
+            }
     }
     .escuela__imagenes-small{
         display: flex;
@@ -713,30 +701,50 @@ nav{
 .escuela__imagenes{
     display: flex;
     justify-content: center;
-    img{
-        background: $cardfontcolor;
-        @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
-        width: 80%;
-        height: 80%;
-        padding: 20px 30px;
-        margin-bottom: 20px;
-        border-radius: 6px;
-        border: 2px solid $border-color;
+        .uno{
+            background: $background;
+            @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
+            width: 80%;
+            height: 80%;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 2px solid $border-color;
+        }
+        .dos{
+            background: $background2;
+            @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
+            width: 80%;
+            height: 80%;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 2px solid $border-color;
         }
     }
 .escuela__imagenes2{
     display: flex;
     justify-content: center;
-    img{
-        background: $cardfontcolor;
-        @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
-        width: 80%;
-        height: 80%;
-        padding: 20px 30px;
-        margin-bottom: 30px;
-        border-radius: 6px;
-        border: 2px solid $border-color;
-    }
+        .uno{
+            background: $cardfontcolor;
+            @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
+            width: 80%;
+            height: 80%;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 2px solid $border-color;
+        }
+        .dos{
+            background: $bordertopthree-color;
+            @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
+            width: 80%;
+            height: 80%;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 2px solid $border-color;
+        }
 }
 /*Tablet*/
 @media (max-width: 850px){
@@ -775,6 +783,13 @@ nav{
             font-family: $secundary-font;
         }  
     }
+    .saludo{
+        .saludo__frase{
+            h3{
+                font-size: 25px;
+            }
+        }
+    }
 }
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO NIVELES*/
@@ -795,43 +810,126 @@ nav{
         box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
     }
 }
-/*------------------------------------------------------------------------------------------------------*/
-/*ESTILANDO CONTACTO*/
-.cont{ 
-    .conta{
+@media (max-width: 850px){
+    .niveles{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        img{
+            background-color: #a10702;
+            padding: 3px 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 85%;
+            width: 100%;
+            -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+            box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+        }
     }
 }
-.cont2{
-    .map{
+/*Mobile*/
+@media (max-width: 576px){   
+    .niveles{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
-        height: 100px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-}
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.foto{
-    img{
-        height: 300px;
-        width: auto;        
+        img{
+            background-color: #a10702;
+            padding: 3px 0px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 85%;
+            width: 100%;
+            -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+            box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+        }
     }
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+/*ESTILANDO CONTACTO*/
+.fond{
+    background-image: url("../imagenes/close-up-people-putting-hands-together.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cont{ 
+        display: flex;
+        justify-content: flex-end;
+        .conta{
+            h2{
+                text-shadow: 1px 1px 2px $secundary-color;
+                color: $primary-color;
+            }
+            p{
+                text-shadow: 1px 1px 2px $secundary-color;
+                color: $primary-color;
+            }
+        }
+    }
+    .cont2{
+        display: flex;
+        justify-content: flex-start;
+        .map{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        height: 100%;
+        width: 100%;
+        }
+    }
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7f7f9;
+    
+    .formulario{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid $first-color;  
+        padding: 10px;  
+        background: $background;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+        .tit{
+            text-align: center;
+        }
+    }   
+}
+@media (max-width: 850px){
+    .fond{
+        .cont2{
+            display: flex;
+            justify-content: flex-start;
+            .map{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            height: 100%;
+            width: 100%;
+            }
+        }
+    }
+}
+/*Mobile*/
+@media (max-width: 576px){   
+    /*.fond{
+        .cont2{
+            display: flex;
+            justify-content: flex-start;
+            .map{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            height: 100%;
+            width: 100%;
+            }
+        }
+    }*/
+}
