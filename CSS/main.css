@@ -524,7 +524,8 @@ nav {
     margin-right: 400px;
     margin-top: 20px;
     font-style: italic;
-    font-family: "Times New Roman, Times, serif"; }
+    font-family: "Times New Roman, Times, serif";
+    font-size: 22px; }
 
 .escuela__imagenes {
   display: flex;
@@ -664,6 +665,7 @@ nav {
 /*ESTILANDO CONTACTO*/
 .fond {
   background-image: url("../imagenes/close-up-people-putting-hands-together.jpg");
+  border-bottom: 2px solid #000000;
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -672,37 +674,67 @@ nav {
   align-items: center; }
   .fond .cont {
     display: flex;
-    justify-content: flex-end; }
+    justify-content: center; }
     .fond .cont .conta h2 {
       text-shadow: 1px 1px 2px #ffffff;
-      color: #29335c; }
+      color: #29335c;
+      font-size: 45px;
+      margin-top: 20px; }
     .fond .cont .conta p {
       text-shadow: 1px 1px 2px #ffffff;
-      color: #29335c; }
-  .fond .cont2 {
+      color: #29335c;
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif; }
+
+.cont2 .map_seccion .tit h2 {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-left: 30px;
+  color: #29335c;
+  text-transform: uppercase; }
+
+.cont2 .map_seccion .tit hr {
+  width: 70%;
+  margin-left: 30px; }
+
+.cont2 .map {
+  display: flex;
+  justify-content: center; }
+  .cont2 .map .mapete {
+    margin-bottom: 20px; }
+
+.contenedor {
+  background-color: #e9c46a;
+  border-top: 2px solid #000000; }
+  .contenedor .tit_form h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #29335c;
+    text-transform: uppercase; }
+  .contenedor .tit_form hr {
+    width: 70%;
+    margin-left: 30px; }
+  .contenedor #form_contenedor {
     display: flex;
-    justify-content: flex-start; }
-    .fond .cont2 .map {
+    flex-direction: column;
+    align-items: center; }
+    .contenedor #form_contenedor .formulario {
       margin-top: 20px;
       margin-bottom: 20px;
-      margin-left: 10px;
-      height: 100%;
-      width: 100%; }
-
-#contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #f7f7f9; }
-  #contenedor .formulario {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #e63946;
-    padding: 10px;
-    background: #fffcf9;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); }
-    #contenedor .formulario .tit {
-      text-align: center; }
+      border: 1px solid #e63946;
+      padding: 10px;
+      background: #fffcf9;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); }
+      .contenedor #form_contenedor .formulario .texto1 {
+        display: flex;
+        flex-direction: column; }
+        .contenedor #form_contenedor .formulario .texto1 input {
+          margin-bottom: 2px; }
+        .contenedor #form_contenedor .formulario .texto1 textarea {
+          margin-bottom: 2px; }
+      .contenedor #form_contenedor .formulario .tit {
+        text-align: center; }
 
 @media (max-width: 850px) {
   .fond .cont2 {
@@ -717,16 +749,25 @@ nav {
 
 /*Mobile*/
 @media (max-width: 576px) {
-  /*.fond{
-        .cont2{
-            display: flex;
-            justify-content: flex-start;
-            .map{
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 10px;
-            height: 100%;
-            width: 100%;
-            }
-        }
-    }*/ }
+  .fond {
+    background-image: url("../imagenes/close-up-people-putting-hands-together.jpg");
+    border-bottom: 2px solid #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .fond .cont {
+      display: flex;
+      justify-content: center; }
+      .fond .cont .conta h2 {
+        text-shadow: 1px 1px 2px #ffffff;
+        color: #29335c;
+        font-size: 25px;
+        margin-top: 20px; }
+      .fond .cont .conta p {
+        text-shadow: 1px 1px 2px #ffffff;
+        color: #29335c;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif; } }

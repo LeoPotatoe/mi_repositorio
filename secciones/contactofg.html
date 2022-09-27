@@ -66,27 +66,39 @@
             <main>
                 <div class="row mx-0 px-0">
                     <div class="fond">
-                        <div class="col-12 col-md-6 mx-0 px-0 cont">   
+                        <div class="col-12 mx-0 px-0 cont">   
                             <div class="conta">
-                                <h2>Contactanos</h2>
+                                <h2>Te esperamos</h2>
                                 <p>Telefono: (+5411)-3313-0252</p>
                                 <p>Direccion: Parque Chacabuco - CABA - Argentina</p>
                                 <p>Email: cecigu604@hotmail.com</p>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 mx-0 px-0 cont2">   
+                        </div>         
+                    </div>
+                </div>
+                <div class="row mx-0 px-0">
+                    <div class="col-12 mx-0 px-0 cont2">   
+                        <div class="map_seccion">
+                            <div class="tit">
+                                <h2>Ubicacion</h2>
+                                <hr>
+                            </div>
                             <div class="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.736272844876!2d-58.4273225!3d-34.6361043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbae0d4d099b%3A0xac0b76367cbaa127!2sBalbastro%20%26%20Doblas%2C%20C1424%20CABA!5e0!3m2!1ses-419!2sar!4v1664148367226!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                <iframe class="mapete" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.736272844876!2d-58.4273225!3d-34.6361043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbae0d4d099b%3A0xac0b76367cbaa127!2sBalbastro%20%26%20Doblas%2C%20C1424%20CABA!5e0!3m2!1ses-419!2sar!4v1664148367226!5m2!1ses-419!2sar" width="600" height="300" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                                 </iframe>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mx-0 px-0">
-                    <div class="col-12 mx-0 px-0">
-                        <form id="contenedor" action="" method="get" enctype="multipart/form-data">
+                    <div class="col-12 mx-0 px-0 contenedor">
+                        <div class="tit_form">
+                            <h2>Formulario de contacto</h2>
+                            <hr>
+                        </div>
+                        <form id="form_contenedor" action="" method="get" enctype="multipart/form-data">
                             <div class="formulario">
-                                <h2 class="tit">Datos personales</h2>
+                                <h4 class="tit">Datos personales</h4>
                                 <br>
                                 <div class="texto">
                                     <input type="text" id="Nombre y Apellido" name="Nombre y Apellido" 
@@ -111,13 +123,12 @@
                                 <br>
                                 <div class="edad">
                                     <label for="Edad"><b>Edad</b></label>
-                                    <input type="number" name="edad" id="edad" min="0" max="100">
+                                    <input type="number" name="edad" id="edad" min="7" max="100">
                                 </div>
                                 <br>
                                 <div class="texto1">
                                     <input type="text" id="asunto" name="Asunto" 
                                         placeholder="Asunto">
-                                <br>
                                     <textarea name="" id="" cols="30" rows="5"></textarea>        
                                 </div>
                                 <div class="btns">
