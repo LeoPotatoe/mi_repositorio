@@ -750,15 +750,17 @@ nav{
 /*Tablet*/
 @media (max-width: 850px){
     .imagenceci{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img{
-            height: 250px;
-            width: 200px;
-            margin-left: 30px;
+            height: 350px;
+            width: 300px;
         }
-        p{
+        p{  
+            width: 80%;
             margin: 0px;
-            margin-left: 20px;
-            margin-right: 20px;
             margin-top: 20px;
             font-style: italic;
             font-family: $secundary-font;
@@ -768,20 +770,25 @@ nav{
 /*Mobile*/
 @media (max-width: 576px){   
     .imagenceci{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img{
-            height: 250px;
-            width: 200px;
-            margin-left: 30px;
+            height: 300px;
+            width: 250px;
+            margin: 0;
         }    
         p{
             height: 250px;
+            width: 80%;
             overflow: scroll;
+            padding: 0px 5px;
             margin: 0px;
-            margin-left: 20px;
-            margin-right: 20px;
             margin-top: 20px;
             font-style: italic;
             font-family: $secundary-font;
+            font-size: 20px;
         }  
     }
     .saludo{
@@ -795,24 +802,32 @@ nav{
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO NIVELES*/
 
-.niveles{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    img{
-        background-color: #a10702;
-        padding: 3px 0px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        height: 85%;
-        width: auto;
-        -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
-        box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
-    }
+.titulo{
+    .cronog{
+        h2{
+            font-size: 30px;
+           margin-top: 40px;
+           margin-left: 30px;
+           color: $primary-color;
+           text-transform: uppercase;
+           }
+       }
 }
-@media (max-width: 850px){
-    .niveles{
+.niveles{
+    .titulo_grilla{
+        h2{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+            color: $primary-color;
+            text-transform: uppercase;
+           }
+        hr{
+            width: 70%;
+            margin-left: 30px;
+        }
+    }
+    .grilla{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -822,29 +837,63 @@ nav{
             margin-top: 5px;
             margin-bottom: 5px;
             height: 85%;
-            width: 100%;
+            width: auto;
             -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
             box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
         }
     }
 }
+@media (max-width: 850px){
+    .niveles{
+        .grilla{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+                img{
+                background-color: #a10702;
+                padding: 3px 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 85%;
+                width: 100%;
+                -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+                box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+            }
+        }
+    }
+}
 /*Mobile*/
 @media (max-width: 576px){   
+    .titulo{
+        .cronog{
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
     .niveles{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        img{
-            background-color: #a10702;
-            padding: 3px 0px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            height: 85%;
-            width: 100%;
-            -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
-            -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
-            box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+        .titulo_grilla{
+            h2{
+                font-size: 20px;
+            }
+        }
+        .grilla{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                background-color: #a10702;
+                padding: 3px 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 85%;
+                width: 100%;
+                -webkit-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+                box-shadow: 0px 9px 32px 11px rgba(0,0,0,0.75);
+            }
         }
     }
 }
