@@ -660,16 +660,25 @@ nav{
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO SECCION SOBRE MI*/
 
-.saludo__frase{
-    h3{
-    font-family: $secundary-font;
-    margin-top: 20px;
-    margin-left: 30px;
-    font-size: 40px;
-    color: $primary-color;
-    }
-}
 .saludo{
+    .saludo__frase{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        h3{
+        font-family: $secundary-font;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 40px;
+        color: $primary-color;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }        
+    }
     hr{
         width: 70%;
         margin-left: 30px;
@@ -702,6 +711,7 @@ nav{
 .escuela__imagenes{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
         .uno{
             background: $background;
             @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color);  
@@ -794,8 +804,15 @@ nav{
     .saludo{
         .saludo__frase{
             h3{
+                margin-top: 20px;
                 font-size: 25px;
             }
+            img{
+                height: 50px;
+                width: 50px;
+                margin-top: 15px;
+               
+            }     
         }
     }
 }
@@ -948,7 +965,9 @@ nav{
             display: flex;
             justify-content: center;
             .mapete{
+                border-radius: 20%;
                 margin-bottom: 20px;
+                @include primary-box-shadow(2px, 2px, 10px, 2px, $border-color); 
             }
         }
 }
@@ -1041,4 +1060,111 @@ nav{
         }
     }
 }
- 
+.cont2{
+    .map_seccion{
+        .tit{
+            h2{
+                font-size: 25px;
+            }
+        }
+        .map{
+            width: 80%;
+            margin-left: 40px;
+        }
+    }
+}
+.contenedor{
+    .tit_form{
+        h2{
+            font-size: 25px;
+        }
+    }
+}
+ /*------------------------------------------------------------------------------------------------------*/
+/*ESTILANDO DIAS Y HORARIOS NIÑOS*/
+
+.niños_header{
+    @include primary-box-shadow(0px, 0px, 5px, 0px, $border-color); 
+}
+.tabla_niños{
+    .titulo_grupo{
+        h2{
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .titulo_nivel{
+        h4{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .table{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        thead{
+            font-size: 23px;
+            color: $first-color;
+        }
+    }
+}
+ /*------------------------------------------------------------------------------------------------------*/
+/*ESTILANDO DIAS Y HORARIOS PreAdol*/
+.pread_header{
+    @include primary-box-shadow(0px, 0px, 5px, 0px, $border-color); 
+}
+.tabla_pread{
+    .titulo_grupo{
+        h2{
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .titulo_nivel{
+        h4{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .table{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        thead{
+            font-size: 23px;
+            color: $first-color;
+        }
+    }
+}
+/*------------------------------------------------------------------------------------------------------*/
+/*ESTILANDO DIAS Y HORARIOS Adolecente*/
+.adol_header{
+    @include primary-box-shadow(0px, 0px, 5px, 0px, $border-color); 
+}
+.tabla_adolecente{
+    .titulo_grupo{
+        h2{
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .titulo_nivel{
+        h4{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .table{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        thead{
+            font-size: 23px;
+            color: $first-color;
+        }
+    }
+}
