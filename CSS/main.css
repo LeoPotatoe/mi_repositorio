@@ -431,6 +431,8 @@ nav {
       font-size: 20px; }
     .cert .frase p {
       font-size: 15px; }
+      .cert .frase p a img {
+        height: 15px; }
     .cert .lvivaschicos {
       display: none; }
   .escuela__imagenes-small {
