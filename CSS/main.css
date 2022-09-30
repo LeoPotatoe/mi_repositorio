@@ -63,7 +63,7 @@
 /*Mobile*/
 @media (max-width: 576px) {
   .logofrase h1 {
-    font-size: 18px;
+    font-size: 25px;
     color: #29335c;
     font-weight: bold; }
   .logo {
@@ -220,7 +220,7 @@ nav {
   main {
     background-color: #ffffff; }
   .modalidadv p, .modalidadp p {
-    font-size: 11px; }
+    font-size: 15px; }
   .carousel-item h5 {
     font-size: 20px; }
   .carousel-item p {
@@ -430,7 +430,7 @@ nav {
     .cert .certificacion h2 {
       font-size: 20px; }
     .cert .frase p {
-      font-size: 10px; }
+      font-size: 15px; }
     .cert .lvivaschicos {
       display: none; }
   .escuela__imagenes-small {
@@ -439,13 +439,30 @@ nav {
     justify-content: center;
     align-items: center; }
     .escuela__imagenes-small img {
-      height: 300px;
-      width: 90%;
+      height: 250px;
+      width: 80%;
       border-top: solid 4px #db2b39;
       margin-bottom: 20px;
       -webkit-box-shadow: 3px 3px 12px 0px #000000;
       -moz-box-shadow: 3px 3px 12px 0px #000000;
       box-shadow: 3px 3px 12px 0px #000000; } }
+
+.contenedor_tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedor_tarjeta .tarjeta1 {
+    width: 80%; }
+    .contenedor_tarjeta .tarjeta1 .contenido h3 {
+      font-size: 20px; }
+  .contenedor_tarjeta .tarjeta2 {
+    width: 80%; }
+    .contenedor_tarjeta .tarjeta2 .contenido h3 {
+      font-size: 20px; }
+  .contenedor_tarjeta .tarjeta3 {
+    width: 80%; }
+    .contenedor_tarjeta .tarjeta3 .contenido h3 {
+      font-size: 20px; }
 
 /*FOOTER*/
 .foot {
@@ -701,12 +718,12 @@ nav {
       background-color: #a10702;
       padding: 3px 0px;
       margin-top: 5px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
       height: 85%;
-      width: 100%;
-      -webkit-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px 9px 32px 11px rgba(0, 0, 0, 0.75); } }
+      width: 90%;
+      -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.75); } }
 
 /*------------------------------------------------------------------------------------------------------*/
 /*ESTILANDO CONTACTO*/
