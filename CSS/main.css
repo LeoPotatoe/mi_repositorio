@@ -435,14 +435,14 @@ nav {
         height: 15px; }
     .cert .lvivaschicos {
       display: none; }
-  .escuela__imagenes-small {
+  .img_mobile .escuela__imagenes-small {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .escuela__imagenes-small img {
-      height: 250px;
-      width: 80%;
+    .img_mobile .escuela__imagenes-small img {
+      height: 25%;
+      width: 60%;
       border-top: solid 4px #db2b39;
       margin-bottom: 20px;
       -webkit-box-shadow: 3px 3px 12px 0px #000000;
